@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.compProduct{ 
+    margin: 0 5%;    
+}
+
+.title{
+    color: #aa18bf;
+    text-align: left;    
+    font-size: 70%;
+}
+.part-shopping{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+
+.subPart-shopping{
+    display: grid;
+    justify-content: center;    
+    grid-template-columns: repeat(2, 1fr); 
+    margin: 20% 5%; 
+}
+
+.product-shopping{
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+}     
+
+.cant-shopping{ 
+    margin: auto;    
+    font-size: 80%;
+    color: #fff;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #aa18bf;
+}
+
+.ptotal{
+    color: #80808081;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.pValorTotal{
+    color: #aa18bf;
+    font-weight: bold;
+}
+
+.btnWompi{
+    padding: 5%;
+    display: flex;
+    justify-items: center;
+    background-color: #1a4594;
+    border: 1px solid #1a4594;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.imgWompi{
+    width: 15%;
+    margin-right: 3%;
+}
+
+.p01Wompi{
+    margin: auto 2%;
+    font-size: 80%;
+}
+
+.p02Wompi{
+    margin: auto 0;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.modal-container {
+    height: 15rem;
+    text-align: center;
+    margin: 120px auto;
+    display: flex;
+  }  
+ 
+  .modal-backdrop {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    place-items: center;
+  }
+  
+  .modal-view {
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 300px;
+    height: 80%;
+  }
+
+  .imgRunway{
+    width: 100%;
+  }
+  
+  .close-btn {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .desc {
+    margin-top: 25px;
+    color: #4000c7;
+  }
+  

@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.store{
+    margin: 0 5%;
+    color: #aa18bf;
+    text-align: left;
+}
+
+.title{
+    color: #aa18bf;
+    text-align: left;
+    font-size: 70%;
+}
+
+.products {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.divImg{
+    margin-top: 5%;
+    display: grid;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(auto-fill);
+    justify-content: center;
+    align-items: center;
+}

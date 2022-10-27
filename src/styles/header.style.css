@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divPart01{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divPart02{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.buttonHeader{ 
+    background-color: #aa18bf;
+    border: 1px solid #aa18bf;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%; 
+    height: 35%; 
+    margin-top: 15%;
+    margin-right: 10%;  
+    padding: 2%;  
+}
+
+.divPart02-shopping{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin-right: 10%;  
+}
+
+.buttonHeader-shopping{ 
+    background-color: #f5ecf8;
+    border: 1px solid #aa18bf;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%; 
+    height: 35%; 
+    margin-top: 15%;
+    padding: 2%;  
+}
+
+.linkBtnClose{
+    margin-top: 15%;
+}
+
+.btnClose{
+    color: #fff;
+    width: 250%;
+    height: 100%;
+    padding: 2%;   
+    border: 1px solid #aa18bf; 
+    background-color: #aa18bf;
+}
+
+.logo {
+    background-color: #aa18bf;
+    max-width: 35%;    
+    margin: 10%;  
+    border-radius: 10%; 
+    background-image: radial-gradient(circle at 50% -20.71%, #ff57d2 0, #aa18bf 12.5%, #aa18bf 25%, #aa18bf 37.5%, #aa18bf 50%, #aa18bf 62.5%, #aa18bf 75%, #aa18bf 87.5%, #aa18bf 100%);
+}
+
+.carrito {
+    max-width: 30%;   
+}
+
+.carrito-shopping {
+    max-width: 30%;   
+}
+
+.price{
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 90%;  
+    margin: auto 0;    
+}
+
+.price-shopping{
+    display: block;
+    font-weight: bold;
+    color: #aa18bf;
+    font-size: 90%;  
+    margin: auto 0;    
+}
+

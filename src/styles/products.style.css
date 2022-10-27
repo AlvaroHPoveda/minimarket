@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.compProduct{ 
+    margin: 0 5%;    
+}
+
+.title{
+    color: #aa18bf;
+    text-align: left;
+    font-size: 70%;
+}
+
+.productDetail{
+    margin-top: 5%;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.part01{
+    display: flex;
+}
+
+.cant{   
+    font-size: 80%;
+    color: #fff;
+    line-height: 20px;
+    height: 22px;
+    width: 22px;  
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #aa18bf;
+}
+
+.part02{
+    display: flex;
+    justify-content: space-between;
+}
+
+.namePrice{
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+}
+
+.pName{
+    font-weight: bold;
+    font-size: 70%;
+    display: block;
+    margin: 0 2%;
+}
+.pPunto{
+    font-weight: bold;
+    color: gray;
+    font-size: 70%;
+    display: block;
+    margin: 0 2%;
+}
+.pPrice{
+    font-weight: bold;
+    color: #aa18bf;
+    font-size: 70%;
+    display: block;
+    margin: 0 2%;
+}
+
+.divButton{
+    display: flex; 
+    justify-content: space-between;
+    margin: 4% 0;
+}
+.buttonSub{
+    border: 1px solid rgb(219, 219, 219);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(219, 219, 219);
+}
+.buttonAdd{
+    border: #aa18bf;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    background-color: #aa18bf; 
+}
+
+.description{
+    color: gray;
+    font-size: 70%;
+    text-justify: inter-word;
+}
