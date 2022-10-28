@@ -33,3 +33,23 @@
     justify-content: center;
     align-items: center;
 }
+
+.div-store{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.cant-store{    
+    position: absolute;
+
+    font-size: 80%;
+    color: #fff;
+    line-height: 22px;
+    height: 22px;
+    width: 22px;  
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #aa18bf;
+}

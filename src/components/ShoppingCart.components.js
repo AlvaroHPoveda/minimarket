@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux';
 import '../styles/shopping.style.css'
 
 const ShoppingCartComponents = () => {
@@ -6,24 +7,34 @@ const ShoppingCartComponents = () => {
   const openModalHandler = () => {
     setIsOpen(!isOpen);
   };
+  const productShopping = useSelector(state => state.counter)
+
   return (
     <div className='compProduct'>
       <div className='title'>
         <strong>Shopping Cart</strong>
         <hr />
       </div>            
+      <div className='subPart-shopping'>
+          {
+            productShopping.map( product => 
+              product.cant > 0 && 
+              <>
+                <div key={product.id} className='li-shopping'>
+                  <p className='cant-shopping'>{product.cant}</p>
+                  <img className='product-shopping' src={product.url} alt="" />
+                </div> 
+                <hr />
+
+              </>                         
+            )
+          }  
+       </div>
+      
       <div className='part-shopping'>
-        <div className='subPart-shopping'>
-          <p className='cant-shopping'>10</p>
-          <img className='product-shopping' src="https://i.postimg.cc/rFPrDBnr/CEREAL-ZUCARITAS-F.png" alt="" />
-        </div>
-        <div></div>
-      </div>
-      <hr />  
-      <div className='part-shopping'>
         <div></div>
         <div className='subPart-shopping'>
-          <p className='ptotal'>Total:</p><p className='pValorTotal'>$10.00</p>
+          <p className='ptotal'>Total:</p><p className='pValorTotal'>{(productShopping[productShopping.length - 1].total).toFixed(2)}</p>
         </div>
       </div>
       <button onClick={openModalHandler} className='btnWompi'>

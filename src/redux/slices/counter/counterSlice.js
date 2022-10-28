@@ -1,24 +1,29 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { getAllProducts } from '../../../api/data.api';
 
-const initialState = { counter: 0 };
+const initialState = getAllProducts();
 
 export const counterSlice = createSlice({
   name: 'counter',
-  initialState,
+  initialState, 
   reducers: {
-    increment (state) {
-      state.counter++;
-    },
-    decrement (state) {
-      state.counter--;
-    },
-    reset (state) {
-      state.counter = 0;
-    },
-    incrementByAmount (state, action) {
-      state.counter += action.payload;
+      setEspecificValue: (state, action) => {
+        const { id, number } = action.payload
+        const objProduct = state.find( product => product.id === id) 
+        if (objProduct && objProduct.cant > 0 || (objProduct.cant === 0 && number !== -1)){
+          objProduct.cant += number;
+          objProduct.total = objProduct.cant * objProduct.price;
+          let totalAdd = 0;
+          state.map( product => {            
+            if (product.name !== 'total'){
+              totalAdd += product.total
+            }
+          })
+        const totalProducts = state.find( product => product.name === 'total'); 
+          totalProducts.total = totalAdd;         
+        }           
+      }
     }
-  }
-});
+  })
 
-export const { increment, decrement, reset, incrementByAmount } = counterSlice.actions;
+export const { setEspecificValue } = counterSlice.actions;

@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "webpack serve --mode=development",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "test": "jest"
   },
   "keywords": [
     "micro",
@@ -20,11 +21,14 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@reduxjs/toolkit": "^1.8.3",
+    "@zarconontol/enzyme-adapter-react-18": "^0.7.3",
     "axios": "^0.27.2",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "enzyme": "^3.11.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.2.2",
     "postcss-loader": "^7.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -39,12 +43,21 @@
     "webpack-dev-server": "^4.8.1"
   },
   "devDependencies": {
+    "babel-jest": "^29.2.2",
     "eslint": "^8.14.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.29.4"
+    "eslint-plugin-react": "^7.29.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jsdom": "20.0.1",
+    "jsdom-global": "3.0.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   }
- 
 }

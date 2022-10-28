@@ -15,24 +15,28 @@
 }
 .part-shopping{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .subPart-shopping{
     display: grid;
-    justify-content: center;    
-    grid-template-columns: repeat(2, 1fr); 
-    margin: 20% 5%; 
+    grid-template-columns: repeat(1, 1fr);
+  
+}
+
+.li-shopping{
+    display: flex;
+    justify-items: flex-start;    
 }
 
 .product-shopping{
-    width: 120%;
-    height: 120%;
-    object-fit: cover;
+    width: 40%;    
+    object-fit:contain;
+    margin: auto 0; 
 }     
 
 .cant-shopping{ 
-    margin: auto;    
+    margin: auto 0;    
     font-size: 80%;
     color: #fff;
     line-height: 30px;

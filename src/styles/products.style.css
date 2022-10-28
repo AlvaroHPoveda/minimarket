@@ -28,7 +28,7 @@
 .cant{   
     font-size: 80%;
     color: #fff;
-    line-height: 20px;
+    line-height: 22px;
     height: 22px;
     width: 22px;  
     text-align: center;
@@ -43,30 +43,29 @@
 }
 
 .namePrice{
-    display: flex;
+    display: flex;  
     justify-content: space-between;
     margin: 4% 0;
 }
 
 .pName{
     font-weight: bold;
-    font-size: 70%;
+    font-size: 80%;
     display: block;
-    margin: 0 2%;
+    margin-right: 2%;
 }
 .pPunto{
     font-weight: bold;
     color: gray;
-    font-size: 70%;
+    font-size: 80%;
     display: block;
-    margin: 0 2%;
+    margin-right: 2%;
 }
 .pPrice{
     font-weight: bold;
     color: #aa18bf;
-    font-size: 70%;
-    display: block;
-    margin: 0 2%;
+    font-size: 80%;
+    display: block;  
 }
 
 .divButton{

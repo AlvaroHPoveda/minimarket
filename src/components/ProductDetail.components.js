@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router'
+import { useSelector, useDispatch } from 'react-redux';
+import { setEspecificValue } from '../redux/slices/counter';
 
 import { getProduct } from '../api/data.api'
 import '../styles/products.style.css'
 
 const ProductDetailComponents = () => {
   const params = useParams();
-  const product = getProduct(+params.productId);
-
-  const [valor, setValor] = useState(0);
-
-  const counter = (number) => {
-    valor > 0 || (valor === 0 && number !== -1) ? setValor(valor + number) : setValor(0)
-  }
+  const product = getProduct(+params.productId); 
+  const counter = useSelector(state => state.counter)
+  const dispatch = useDispatch();
 
   return (
     <div className='compProduct'> 
@@ -21,18 +19,18 @@ const ProductDetailComponents = () => {
         <hr />
       </div>            
       <div className='part01'>
-        <p className='cant'>{valor}</p>
+        <p className='cant'>{counter[+params.productId - 1].cant}</p>
         <img className='productDetail' src={product.url} alt="" />
       </div>
       <div className='part02'>
         <div className='namePrice'>
           <p className='pName'>{product.name}</p>
           <p className='pPunto'>*</p>
-          <p className='pPrice'>${product.price}</p>
+          <p className='pPrice'>${(product.price).toFixed(2)}</p>
         </div>
         <div className='divButton'>
-          <button onClick={() => counter(-1)} className='buttonSub'>-</button>
-          <button onClick={() => counter(+1)} className='buttonAdd'>+</button>
+          <button onClick={() => dispatch(setEspecificValue({id : +params.productId, number : -1}))} className='buttonSub'>-</button>
+          <button onClick={() => dispatch(setEspecificValue({id : +params.productId, number : +1}))} className='buttonAdd'>+</button>
         </div>
       </div>
       <hr />    
