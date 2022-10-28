@@ -6,8 +6,8 @@ An application made for technical testing for the Wompi company, where the funct
 
 ## Project Screen Shot(s)
 
-![](https://i.postimg.cc/dVB4xqcL/01.png){width='100px'}
-![](https://i.postimg.cc/sDCmfBVM/02.png){width='100px'}
+![](https://i.postimg.cc/dVB4xqcL/01.png)
+![](https://i.postimg.cc/sDCmfBVM/02.png)
 
 ## Installation and Setup Instructions
 
