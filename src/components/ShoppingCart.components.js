@@ -33,7 +33,7 @@ const ShoppingCartComponents = () => {
       
       <div className='part-shopping'>
         <div></div>
-        <div className='subPart-shopping'>
+        <div className='subPart-shopping-price'>
           <p className='ptotal'>Total:</p><p className='pValorTotal'>{(productShopping[productShopping.length - 1].total).toFixed(2)}</p>
         </div>
       </div>

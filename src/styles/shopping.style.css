@@ -24,6 +24,12 @@
   
 }
 
+.subPart-shopping-price{
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+
 .li-shopping{
     display: flex;
     justify-items: flex-start;    
@@ -124,4 +130,56 @@
     margin-top: 25px;
     color: #4000c7;
   }
-  
+
+  @media only screen and (min-width: 600px) {
+    .cant-shopping{ 
+        font-size: 150%;
+        line-height: 40px;
+        height: 40px;
+        width: 40px;     
+    }
+    .ptotal{
+        font-size: 200%;
+     
+    }
+    
+    .pValorTotal{
+        font-size: 200%;
+    }
+
+    .btnWompi{   
+        width: 70%;
+    }
+
+    .imgWompi{
+        width: 20%;
+        margin-right: 3%;
+    }
+    
+    .p01Wompi{
+        font-size: 90%;
+    }
+    
+    .p02Wompi{
+        font-size: 90%;  
+    }
+    .modal-view {
+        border-radius: 10px;
+        background-color: #ffffff;
+        width: 300px;
+        height: 80%;
+      }
+
+      @media only screen and (min-width: 967px) {
+        .p01Wompi{
+            margin: auto 2%;
+            font-size: 150%;
+        }
+        
+        .p02Wompi{
+            margin: auto 0;
+            font-size: 150%;
+            font-weight: bold;
+        }
+      }
+}

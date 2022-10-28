@@ -97,3 +97,14 @@
     margin: auto 0;    
 }
 
+@media only screen and (min-width: 600px) {
+  .price{
+    font-size: 180%; 
+  }
+  .price-shopping{
+    font-size: 180%; 
+  }
+  .btnClose{
+    font-size: 180%; 
+  }
+}

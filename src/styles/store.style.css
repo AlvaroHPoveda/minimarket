@@ -42,7 +42,6 @@
 
 .cant-store{    
     position: absolute;
-
     font-size: 80%;
     color: #fff;
     line-height: 22px;
@@ -53,3 +52,15 @@
     border-radius: 50%;
     background: #aa18bf;
 }
+
+@media only screen and (min-width: 600px) {
+    .title strong{
+      font-size: 250%; 
+    }
+    .cant-store{
+        font-size: 125%;
+        line-height: 35px;
+        height: 35px;
+        width: 35px;
+    }
+  }

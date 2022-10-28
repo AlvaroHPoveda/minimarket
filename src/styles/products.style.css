@@ -44,8 +44,9 @@
 
 .namePrice{
     display: flex;  
+    justify-items: center;
     justify-content: space-between;
-    margin: 4% 0;
+    margin: 6% 0;
 }
 
 .pName{
@@ -92,3 +93,35 @@
     font-size: 70%;
     text-justify: inter-word;
 }
+
+@media only screen and (min-width: 600px) {
+    .description{
+        font-size: 150%; 
+    }
+    .pName{
+        font-size: 150%; 
+    }
+    .pPunto{
+        font-size: 150%; 
+    }
+    .pPrice{
+        font-size: 150%; 
+    }
+    .buttonSub{     
+        width: 35px;
+        height: 35px;    
+    }
+    .buttonAdd{
+        width: 35px;
+        height: 35px;       
+    }
+    .divButton button{        
+        font-size: 200%; 
+    }
+    .cant{   
+        font-size: 150%;
+        line-height: 40px;
+        height: 40px;
+        width: 40px;
+    }
+  }
