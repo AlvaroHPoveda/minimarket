@@ -13,7 +13,7 @@
     "frontend",
     "react"
   ],
-  "author": "Gastón Maximiliano Grecco <gastonmgrecco@gmail.com>",
+  "author": "Alvaro Poveda <alhepove@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.17.9",
